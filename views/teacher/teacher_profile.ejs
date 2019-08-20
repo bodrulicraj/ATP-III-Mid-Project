@@ -1,0 +1,107 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+	    <meta charset="utf-8">
+	    <title>Online School - Student List</title>
+	    <link rel="stylesheet" href="/css/teacher/teacher.css">
+		<link rel="stylesheet" href="/css/teacher/profile.css">
+		
+
+		<link rel="stylesheet" href="/boostrap/css/bootstrap.min.css">
+    <script src="/boostrap/js/jQuery.js"></script>
+    <script src="/boostrap/js/popper.js"></script>
+    <script src="/boostrap/js/bootstrap.min.js"></script>
+  	</head>
+	
+	<body>
+		<div class="full_container">
+			<div class="teacher_header_wraper">
+				<div class="teacher_header container_center">
+					<div class="teacher_logo">
+						<a href="#"><img src="/images/logo.png" alt="Logo"/></a>
+						<!-- <a href="#"><h2>Online School Portal</h2></a> -->
+					</div>
+
+					<div class="teacher_menu_icon">
+						<ul>
+							<li><a href="/teacher/cancel_course">&#x271A Cancel Course</a></li>
+							<li><a href="/teacher/cancel_batch">&#x271A Cancel Batch</a></li>
+							<li><a href="/teacher/upload_grade">&#x271A Upload Grade</a></li>
+							<li><a href="/teacher/upload_document">&#x271A Upload Document</a></li>
+							<li><a href="/logout/logout" style="font-size: 26px;padding-top: 3px;" title="Logout">&#x27A5</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			
+			
+			<div class="content_wraper">
+				<div class="content container_center">
+					<div class="content_left">
+						<div class="teacher_photo">
+							<!--<img src="../../images/profiles/<?php echo $adminPhoto;?>" alt="Profile Photo" />-->						
+  							<!-- <img src="/images/team/bodrul.jpg" alt="Bodrul" /> -->
+						</div>
+						<div class="teacher_name">
+							<p>Welcome, <%= userInfo[0].name %></P>
+						</div>						
+						<div class="teacher_menu_section">
+							<ul>
+								<li><a href="/teacher/teacher"> My Account</a></li>
+								<li><a href="/teacher/userList/student_list">&#x2756 Students List</a></li>
+								<li><a href="/teacher/course_list">&#x2756 Course List</a></li>
+								<li><a href="/teacher/batch_list">&#x2756 Batch List</a></li>
+								<li><a href="/teacher/class_schedule">&#x2756 Class Schedule</a></li>
+								<li><a href="/teacher/document_list">&#x2756 Document List</a></li>
+								<li><a href="/teacher/financial_status">&#x2756 Financial Status</a></li>
+								<li><a href="/teacher/teacher_profile">&#x2756 Profile</a></li>
+								<li><a href="/teacher/message">&#x2709 Message</a></li>
+								<li><a href="/teacher/change_password">&#x274B Change Password</a></li>
+								<li><a href="/logout/logout">&#x27A5 Logout</a></li>
+							</ul>
+						</div>
+					</div>
+					
+					<div class="content_right">
+						<div class="profile">
+							<table class="teacher_info">
+								<tr>
+									<td class="info_col" >ID:</td>
+									<td class="info_val"> <%= userInfo[0].uid %> </td>
+								</tr>
+								<tr>
+									<td class="info_col" >Name:</td>
+									<td class="info_val"> <%= userInfo[0].name %> </td>
+								</tr>
+								<tr>
+									<td class="info_col">Email:</td>
+									<td class="info_val"> <%= userInfo[0].email %> </td>
+								</tr>
+								<tr>
+									<td class="info_col">Father Name:</td>
+									<td class="info_val"> <%= userInfo[0].fathername %> </td>
+								</tr>
+								<tr>
+									<td class="info_col">Mother Name:</td>
+									<td class="info_val"> <%= userInfo[0].mothername %> </td>
+								</tr>								
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="footer_wraper">
+				<div class="footer container_center">
+					<div class="footer_top">
+					</div>
+					<div class="footer_bottom">
+						<p>Copyright 2018-19 &copy; onlineschool.com <br/> &reg All Right Reserved</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

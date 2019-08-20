@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>admin</title>
+    <link rel="stylesheet" href="/css/admin.css">
+  </head>
+
+  <body>
+    <div class="full-container">
+      <div class="container">
+        <!-- HTML Code for User Header Section -->
+        <div class="user-header">
+          <div class="logo"></div>
+          <div class="top-menu">
+            <ul>
+							<li><a href="/admin/addElement/addStudent">&#x271A; Student</a></li>
+							<li><a href="/admin/addElement/addTeacher">&#x271A; Teacher</a></li>
+							<li><a href="/admin/admin">&#x271A; Department</a></li>
+							<li><a href="/admin/admin">&#x271A; Course</a></li>
+							<li><a href="/admin/admin">&#x271A; Batch</a></li>
+							<li><a href="/logout/logout">&#x27A5; Logout</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- HTML Code for User Content Section -->
+        <div class="user-content">
+          <div class="left-content">
+            <div class="user-info">
+              <p>  </p>
+            </div>
+            <div class="left-menu">
+              <ul>
+								<li><a href="/admin/admin" > My Account </a></li>
+								<li><a href=""> Department List </a></li>
+								<li><a href=""> Course List </a></li>
+								<li><a href=""> Teacher List </a></li>
+								<li><a href="" id='active' > Student List </a></li>
+								<li><a href=""> Salary Table </a></li>
+								<li><a href=""> Profile </a></li>
+								<li><a href=""> Message </a></li>
+								<li><a href=""> Change Password </a></li>
+								<li><a href=""> Logout </a></li>
+							</ul>
+            </div>
+          </div>
+          <div class="right-content">
+            <div class="student-list">
+              <table border="1">
+  			        <tr>
+                  <th>#</th>
+                  <th>User ID</th>
+  				        <th>Name</th>
+  				        <th>Email</th>
+  			        </tr>
+
+  			        <%  for( var i=0; i < userList.length; i++ ){ %>
+                  <tr>
+                    <td> <%= userList[i].id %> </td>
+                    <td> <%= userList[i].uid %> </td>
+                    <td> <%= userList[i].name %> </td>
+                    <td> <%= userList[i].email %> </td>
+                  </tr>
+                <%	} %>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <div class="user-footer">
+          <div class="footer-content">
+            <div class="footer-top">
+  					</div>
+  					<div class="footer-bottom">
+  						<p>Copyright 2018-19 &copy; onlineschool.com <br/> &reg All Right Reserved</p>
+  					</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

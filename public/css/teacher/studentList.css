@@ -1,0 +1,77 @@
+.studentList_table{}
+
+.student_list_title{
+	background-color: #235169;
+	margin-bottom: 30px;
+}
+
+.student_list_title h3{
+	text-align: center;
+	color: #E6E9EA;
+	padding: 10px 0px;
+	font-size: 22px;
+}
+
+.table_area{
+	height: 894px;
+	overflow: scroll;
+}
+
+.student_table{
+	width: 100%;
+	margin-bottom: 20px;
+	border-spacing: 0px;
+	border-bottom: 1px solid black;
+	text-align: center;
+	font-size: 16px;
+}
+
+.student_table th{
+	padding: 8px 0px;
+	border: 1px solid #32455C;
+	border-right: 0px;
+	background-color: #3E7288;
+	color: #F0F0F0;
+	margin-bottom: 1px;
+}
+
+.student_table td{
+	padding: 8px 0px;
+	border: 1px solid #32455C;
+	border-right: 0px;
+	border-bottom: 0px;
+}
+
+.student_row:nth-child(odd) {
+  background-color: #E6E6E6;
+}
+
+.student_row:nth-child(even) {
+  background-color: #D4D0D0;
+}
+
+
+/*
+.liveSearch{
+	width: 400px;
+	margin-bottom: 30px;
+}
+
+
+.liveSearch input{
+	width: 380px;
+}
+
+.liveSearch input[placeholder] {
+	padding: 8px 5px 8px 15px;
+	font-size: 17px;
+}
+
+*/
+
+
+
+
+
+
+

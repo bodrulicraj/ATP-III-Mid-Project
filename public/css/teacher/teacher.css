@@ -1,0 +1,193 @@
+
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+body{
+	background-color: #32455C;
+	background-position: fixed;
+	font-size: 14px;
+}
+
+#active{
+	background-color: #00b386;
+	color: #fff;
+}
+
+#active_top{
+	color: #fff;
+}
+
+.container_center{
+	width: 1220px;
+	margin: 0px auto;
+}
+
+.full_container{}
+
+.teacher_header_wraper{
+	background-color: #253344;
+	border-bottom: 2px solid #355689;
+	margin-bottom: 5px;
+}
+.teacher_header{
+	overflow: hidden;
+}
+.teacher_logo{
+	width: 200px;
+	float: left;
+	margin-right: 20px;
+}
+.teacher_logo img{
+	width: 80px;
+	margin-left: 10px;
+	margin-top: 5px;
+	margin-right: 8px;
+	margin-bottom: 5px;
+	float: left;
+	border-right: 2px solid beige;
+}
+.teacher_logo h2{
+	width: 85px;
+	margin-top: 5px;
+	font-size: 24px;
+	color: #C0C8CA;
+	float: left;
+}
+
+.teacher_menu_icon{
+	width: 790px;
+	float: right;
+	margin-top: 30px;
+}
+
+.teacher_menu_icon ul{
+	list-style-type: none;
+	margin-left: 22px;
+}
+.teacher_menu_icon ul li{
+	float: left;
+}
+.teacher_menu_icon ul li a{
+	text-decoration: none;
+	color: #C0C8CA;
+	display: block;
+	font-size: 20px;
+	padding: 5px 12px;
+}
+
+.teacher_menu_icon ul li a:hover{
+	color: #fff;
+}
+
+.content_wraper{}
+
+.content{
+	border: 1px solid #006666;
+	padding: 5px;
+	overflow: hidden;
+	margin-bottom: 5px;
+}
+
+.content_left{
+	border: 1px solid #006666;
+	width: 280px;
+	height: 980px;
+	background-color: #426873;
+	float: left;
+	margin-right: 10px;
+}
+
+.teacher_photo{
+	width: 220px;
+	margin: 10px 29px;
+	background-color: #235169;
+	border: 1px solid #14365f;
+}
+
+.teacher_photo img{
+	width: 186px;
+	height: 210px;
+	margin: 10px;
+	padding: 5px;
+	background-color: #271e63;
+	border: 2px solid #749dc0;
+	vertical-align: middle;
+}
+
+.teacher_name{
+	width: 254px;
+	margin: 0px 10px 10px 10px;
+	text-align: center;
+	padding: 2px 3px;
+}
+
+.teacher_name p{
+	color: #fff;
+	font-size: 18px;
+}
+
+.teacher_menu_section{
+	width: 260px;
+	margin: 0px 10px 5px 10px;
+	border: 1px solid #293D6E;
+	
+}
+.teacher_menu_section ul{
+	list-style-type: none;
+}
+.teacher_menu_section ul li{
+	padding: 0px;
+	background-color: #253344;
+	margin: 0px 5px;
+	margin-bottom: 10px;
+	text-align: center;
+	padding-block-start: 0px;
+}
+
+.teacher_menu_section ul li:first-child{
+	margin-top: 10px;
+}
+
+.teacher_menu_section ul li a{
+	text-decoration: none;
+	color: #C0C8CA;
+	display: block;
+	font-size: 17px;
+	padding: 6px 0px;
+	
+	
+}
+.teacher_menu_section ul li a:hover{
+	background-color: #00b386;
+	color: #fff;
+}
+
+.content_right{
+	border: 1px solid #3B495E;
+	width: 906px;
+	height: 960px;
+	background-color: #F9F9FA;
+	float: left;
+	padding: 10px;
+}
+
+.footer_wraper{
+	background-color: #1C2845;
+	border-top: 2px solid #355689;
+	border-bottom: 4px solid #0f7aab;;
+}
+
+.footer{}
+.footer_top{}
+.footer_bottom{
+	padding: 5px 10px;
+	color: #C0C8D3;
+}
+.footer_bottom p{
+	margin: 0px;
+	text-align: center;
+	padding: 10px 5px;
+	font-size: 16px;
+}
